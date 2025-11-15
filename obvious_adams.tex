@@ -6,6 +6,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{lettrine}
 
+% Custom double em-dash command
+% For PDF: uses negative kern to connect two em-dashes
+\newcommand{\doublemdash}{---\kern-1pt---}
+
 % Page layout - 6" × 9" trade paperback
 \setstocksize{9in}{6in}
 \settrimmedsize{9in}{6in}{*}
@@ -454,7 +458,7 @@ that plain, every-day young man will ferret it out. `Obvious' seems to be his
 middle name! Maybe I'm a fool, but I'm going to try it.''
 
 ``Adams,'' said the president, as that young man stood before him, ``the
-Monarch Hat Company has two stores in  \rule[0.5ex]{2em}{0.8pt}.
+Monarch Hat Company has two stores in \doublemdash.
 One of them is paying and the other
 is not. I want you to go down there and find out---without asking, mind
 you---which of the stores is not paying, and then I want you to find out why.
