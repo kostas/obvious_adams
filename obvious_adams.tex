@@ -2,9 +2,19 @@
 
 % Typography packages
 \usepackage{microtype}
-\usepackage{ebgaramond}
-\usepackage[T1]{fontenc}
+\usepackage{fontspec}
 \usepackage{lettrine}
+\usepackage{hyperref}
+
+% Font setup
+\setmainfont{EB Garamond}[
+  Numbers=OldStyle,
+  Ligatures=TeX
+]
+\newfontfamily\titlefont{Avenir Next}[
+  Ligatures=TeX,
+  %Letters=SmallCaps
+]
 
 % Custom double em-dash command
 % For PDF: uses negative kern to connect two em-dashes
@@ -27,16 +37,16 @@
 \pagestyle{plain}
 
 % Title formatting
-\pretitle{\begin{center}\HUGE\bfseries}
+\pretitle{\begin{center}\titlefont\HUGE\bfseries}
 \posttitle{\par\end{center}\vskip 0.5em}
-\preauthor{\begin{center}\Large}
+\preauthor{\begin{center}\titlefont\Large}
 \postauthor{\end{center}}
-\predate{\begin{center}\large}
+\predate{\begin{center}\titlefont\large}
 \postdate{\par\end{center}}
 
 % Metadata
 \title{Obvious Adams\\[0.25em]{\LARGE The Story of a Successful Business Man}}
-\author{by\\Robert R.~Updegraff}
+\author{Robert R.~Updegraff}
 \date{1916}
 
 \begin{document}
@@ -54,7 +64,10 @@ Originally published September 1916 in the United States.
 
 \vspace{2em}
 
-\textit{This entire edition of Obvious Adams, including the original text and the new typesetting and design, is dedicated to the public domain worldwide. You are free to copy, modify, and distribute this work without asking permission.}
+\textit{This entire edition of Obvious Adams, including the text, typesetting,
+    design, and layout, is dedicated to the public domain worldwide under the
+    \href{https://creativecommons.org/publicdomain/zero/1.0/legalcode.en}{CC0 1.0 Universal Public Domain Dedication}.}
+
 \end{center}
 \vspace*{\fill}
 
