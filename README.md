@@ -9,8 +9,8 @@ There is one spelling correction of the word advertisments to advertisements, ot
 ## Available Formats
 
 This repository produces two formats from the same LaTeX source:
-- **PDF** - Typeset for print (6" × 9" trade paperback)
-- **EPUB** - Ebook format for e-readers
+- **PDF**: [obvious_adams.pdf](obvious_adams.pdf) - Typeset for print (6" × 9" trade paperback)
+- **EPUB**: [obvious_adams.epub](obvious_adams.epub) - Ebook format for e-readers
 
 ## Building
 
