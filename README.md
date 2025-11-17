@@ -16,7 +16,7 @@ This repository produces two formats from the same LaTeX source:
 
 ### PDF
 ```bash
-pdflatex obvious_adams.tex
+latexmk --pdflua obvious_adams.tex
 ```
 
 ### EPUB
