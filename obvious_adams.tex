@@ -32,6 +32,15 @@
 \setheaderspaces{*}{2\onelineskip}{*}
 \checkandfixthelayout
 
+% Typography refinements
+\clubpenalty=10000     % Prevent orphans (single line at bottom)
+\widowpenalty=10000    % Prevent widows (single line at top)
+\raggedbottom          % Allow variable page heights rather than stretching
+\tolerance=1000        % Allow slightly looser spacing to avoid overfull boxes
+\emergencystretch=3em  % Allow extra stretch in emergencies
+\hyphenpenalty=500     % Make hyphenation less attractive
+\exhyphenpenalty=100   % But allow it when needed
+
 % Page style - page numbers at bottom center
 \pagestyle{plain}
 
